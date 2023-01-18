@@ -15,4 +15,4 @@ spring:
       - id: catalogo_servicio
         uri: lb://catalogo-servicio
         predicates:
-        - Path=/api/**
+        - Path=/api/catalogo/**
