@@ -12,7 +12,11 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: catalogo_servicio
+      - id: catalogo-servicio
         uri: lb://catalogo-servicio
         predicates:
         - Path=/api/catalogo/**
+      - id: pagos-servicio
+        uri: lb://pagos-servicio
+        predicates:
+        - Path=/payments**
