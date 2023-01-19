@@ -19,4 +19,4 @@ spring:
       - id: pagos-servicio
         uri: lb://pagos-servicio
         predicates:
-        - Path=/payments**
+        - Path=/payments/**
