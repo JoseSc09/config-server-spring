@@ -22,7 +22,7 @@ spring:
         - Path=/payments/**
       globalcors:
         corsConfigurations:
-          '[/**]'
+          '[/**]':
             allowedOrigins: "http://localhost:4200"
             allowedMethods:
             - GET
